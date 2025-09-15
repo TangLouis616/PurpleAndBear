@@ -507,7 +507,7 @@ if (typeof window !== "undefined") {
 
             React.startTransition(() => {
                 ReactDOM.hydrateRoot(
-                    
+                    document.getElementById("__framer-badge-container"),
                     React.createElement(React.Suspense, {}, React.createElement(React.lazy(() => import("__framer-badge"))))
                 )
             })
@@ -518,6 +518,7 @@ if (typeof window !== "undefined") {
     <!-- End of bodyEnd -->
 </body>
 </html>
+
 
 
 
